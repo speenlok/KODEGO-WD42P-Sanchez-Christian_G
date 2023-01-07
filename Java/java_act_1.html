@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html> 
+    <body>
+
+        <script>
+            /*NAME*/
+            var name = prompt("First Name"); 
+            var lastname = prompt("Last Name");
+            /*
+            fname = {name:"First Name", lastname:"Last Name"}
+            console.log('object:' + fname);
+            console.log('type of:' + (typeof fname));
+            
+            if(typeof fname == Object){
+            console.log('get name from object:' + fname.name);
+            }
+            */       
+
+
+            /*ADDRESS*/ 
+            var address = prompt("Address");
+            /*
+            fadd = {address:"address"};
+            console.log('data type:' + typeof fadd);
+            console.log(fadd);
+            */
+
+
+            /*AGE*/
+            var age =prompt ("Age");
+
+            let newwage = parseInt(age);
+
+            let str =''
+
+            if(age >= 0 && age <= 1){
+
+            str = "Infant";
+
+            } else if (age >= 2 && age <= 4){
+
+            str = "Toddler";
+
+            } else if (age >= 5 && age <= 12){
+
+            str = "Child";
+
+            } else if (age >= 13 && age <= 19){
+
+            str = "Teen";
+
+            } else if (age >= 20 && age <= 39){
+
+            str = "Adult";
+
+            } else if (age >= 40 && age <= 59){
+
+            str = "Middle Age Adult";
+            }
+
+            else if (age >= 60){
+
+            str = "Senior Adult";
+            }
+
+            console.log(str);
+
+
+
+        </script>
+    </body>
+</html>
+
