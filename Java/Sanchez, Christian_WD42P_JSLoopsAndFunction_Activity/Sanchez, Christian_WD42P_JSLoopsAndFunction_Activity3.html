@@ -1,0 +1,38 @@
+<!Doctype html>
+<html>
+    <body>
+
+        <script>
+
+            /**Write a JS code to print a pattern using for loop
+             - create a function that will display the below pattern
+            - use 2 loops
+            1
+            1 2
+            1 2 3
+            1 2 3 4
+            1 2 3 4 5**/
+
+
+            
+                let rows = 5;
+
+                let pattern = "";
+       
+                for (let n = 1; n <= rows; n++) {
+            
+                for (let num = 1; num <= n; num++) {
+                    pattern += num;
+                }
+
+                pattern +="\n"
+                }
+            
+            alert(pattern)
+            console.log(pattern)
+      
+           
+        </script>    
+
+    </body>
+</html>
