@@ -1,0 +1,59 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>Home</title>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="author" content="Christian Sanchez">
+    </head>
+
+<style>
+.border {
+    border: 2px solid skyblue;
+    max-width: 1000px;
+    margin: auto;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.parent {
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+    color:white;
+    background-color: rgb(64, 143, 170);
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid lightblue;
+}
+
+
+.child {
+    text-align: center;
+}
+
+a {
+  color:white;
+}
+    
+
+</style>
+
+<body>
+    <div class="border">
+        <div class="parent">
+            <div class="child">This is home page:  <%= newVaraiable  %></div>
+        </div>
+        <br />
+        <div class="parent">
+          <br />
+          <div class="child">Click one of the underlined texts below to go to another page in the server.</div>
+          <br />          
+          <div class="child"> <a href="/contact-us">Contact Us</a></div>
+          <br />
+          <div class="child"> <a href="/about-us">About Us</a></div>
+          <br />
+        </div>
+    </div>
+</body>
+</html>

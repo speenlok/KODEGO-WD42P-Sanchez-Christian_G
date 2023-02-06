@@ -1,0 +1,74 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>Contact Us</title>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="author" content="Christian Sanchez">
+    </head>
+
+<style>
+.border {
+    border: 2px solid skyblue;
+    max-width: 1000px;
+    margin: auto;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.parent {
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+    color:white;
+    background-color: rgb(64, 143, 170);
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid lightblue;
+}
+
+
+.child {
+    text-align: center;
+}
+
+a {
+  color:white;
+}
+    
+
+</style>
+
+<body>
+    <div class="border">
+        <div class="parent">
+            <div class="child">Please provide us your name</div>
+        </div>
+        <br />
+        <div class="parent">
+          <br />
+          <div class="child">
+            
+            <form action="/action_page.php">
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname" value="" placeholder="e.g. John"><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname" value="" placeholder="e.g. Doe"><br><br>
+                <input type="submit" value="Submit">
+              </form> 
+
+              <br />
+          </div>
+        </div>
+        <br />
+        <div class="parent">
+            <br />
+            <div class="child">Click one of the underlined texts below to go to another page in the server.</div>
+            <br />          
+            <div class="child"> <a href="/contact-us">Contact Us</a></div>
+            <br />
+            <div class="child"> <a href="/home">Home</a></div>
+            <br />
+    </div>
+</body>
+</html>
