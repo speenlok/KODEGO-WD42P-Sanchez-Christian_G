@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Bookstore</title>
+</head>
+<style>
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: #de7c7c;
+    }
+
+
+    table,
+    td {
+        border: 1px solid #333;
+        color: black;
+        background-color: beige;
+    }
+
+    td {
+      text-align: center;
+    }
+    
+    th {
+        background-color: #333;
+        color: #fff;
+    }
+    
+    .container {
+        text-decoration: none;
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        width: 40%;
+        margin: auto;
+        height: 100vh;
+        align-items: center;
+    }
+    
+    .btn {
+        margin-top: 30px;
+        min-width: 130px;
+        height: 40px;
+        padding: 5px 10px;
+        font-weight: bold;
+        border: 1px solid #000;
+        background: beige;
+        
+    }
+
+    h1 {
+        margin-bottom: 30px;
+        text-align: center;
+        color: beige;
+
+    }
+
+    .theader {
+        width: 60%;
+        padding: 5px 20px;
+    }
+
+
+    a {
+        color: black;
+        text-decoration: none;
+    }
+
+</style>
+<body>
+<div class="container">
+    <table>
+      <tr class="header">
+        <th class="theader">Book Title</th>
+        <th class="theader">Author</th>
+        <th class="theader">Year Published</th>
+        <th class="theader">Price</th>
+        <th class="theader">wishlist</th>
+        <th class="theader">Cart</th>
+      </tr>
+      <tr class="header-one">
+        <td>To Kill a Mockingbird</td>
+        <td>Harper Lee</td>
+        <td>1999</td>
+        <td>$99.99</td>
+        <td><button><a>add</a> </button></td>
+        <td><button><a>add to cart</a> </button></td>
+      </tr>
+      <tr class="header-one">
+        <td>1984</td>
+        <td>George Orwell</td>
+        <td>2000</td>
+        <td>$99.99</td>
+        <td><button><a>add</a> </button></td>
+        <td><button> <a>add to cart</a> </button></td>
+      </tr>
+      <tr class="header-one">
+        <td>Harry Potter and the Philosopher’s Stone</td>
+        <td>J.K. Rowling</td>
+        <td>2001</td>
+        <td>$99.99</td>
+        <td><button><a>add</a> </button></td>
+        <td><button><a>add to cart</a> </button></td>
+      </tr>
+      <tr class="header-one">
+        <td>The Lord of the Rings</td>
+        <td>J.R.R. Tolkien</td>
+        <td>2002</td>
+        <td>$99.99</td>
+        <td><button><a>add</a> </button></td>
+        <td><button><a>add to cart</a> </button></td>
+      </tr>
+      <tr class="header-one">
+        <td>The Great Gatsby</td>
+        <td>F. Scott Fitzgerald</td>
+        <td>2003</td>
+        <td>$99.99</td>
+        <td><button><a>add</a> </button></td>
+        <td><button><a>add to cart</a> </button></td>
+      </tr>
+      <tr class="header-one">
+        <td>The Hobbit</td>
+        <td>J.R.R. Tolkien</td>
+        <td>2003</td>
+        <td>$99.99</td>
+        <td><button><a>add</a> </button></td>
+        <td><button><a>add to cart</a> </button></td>
+      </tr>
+      <tr class="header-one">
+        <td>Pride and Prejudice</td>
+        <td>Jane Auste</td>
+        <td>2004</td>
+        <td>$99.99</td>
+        <td><button><a>add</a> </button></td>
+        <td><button><a>add to cart</a> </button></td>
+      </tr>
+      <tr class="header-one">
+        <td>The Diary Of A Young Girl</td>
+        <td>Anne Frank</td>
+        <td>2022</td>
+        <td>$99.99</td>
+        <td><button><a>add</a> </button></td>
+        <td><button><a>add to cart</a> </button></td>
+      </tr>
+      <tr class="header-one">
+        <td>The Book Thief</td>
+        <td>Markus Zusak</td>
+        <td>2023</td>
+        <td>$99.99</td>
+        <td><button><a>add</a> </button></td>
+        <td><button><a>add to cart</a> </button></td>
+      </tr>
+    </table>
+
+    <button class="btn"><a>Checkout</a></button>
+</div>
+</body>
+</html>

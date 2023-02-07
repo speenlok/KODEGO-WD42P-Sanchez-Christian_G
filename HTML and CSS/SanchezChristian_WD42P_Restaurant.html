@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Activity</title>
+
+    <style>
+    @media (prefers-reduced-motion: no-preference) {
+      * {
+        scroll-behavior: smooth;
+      }
+    }
+    
+    /* header*/
+    header {
+        width: 100%;
+        height: 125px;
+        background-color: peachpuff;
+        display: flex;
+        align-items: center;
+        border-bottom: 4px solid hsl(21, 30%, 35%);
+    }
+    
+    body {
+      background: rgb(255, 255, 255);
+      color: hsl(240, 30%, 15%);
+      font-family: courier;
+      margin: 0;
+    }
+    
+    /* nav properties*/
+    .nav {
+      min-width: 100px;
+      max-width: 200px;
+      height: 50px;
+      padding: 5px;
+      background-color: hsl(21, 30%, 15%);
+      color: #ffffff;
+      display: block;
+      border-radius: 5px;
+      margin:auto;
+      border: 1px solid rgb(239, 215, 215);
+      text-align: center;
+    }
+
+  
+    
+      .nav:hover {
+        background-color: hsl(21, 30%, 35%);
+        color: #ffffff;
+        cursor: pointer;
+      }
+    
+      .nav > p {
+        text-align: center;
+      }
+    
+      .nav > p:hover {
+        font-weight: 600;
+        margin-left: 15px;
+        cursor: pointer;
+      }
+    
+    /* MAIN */
+    section {
+      display: flex;
+      width: 100%;
+      margin: 0 auto 10px auto;
+      max-height: 800px;
+    }
+    
+      a {
+        text-decoration: none;
+        color: white;
+      }
+    
+      h1 {
+        font-size: 28px;
+        margin: 12%;
+        color: hsl(0, 0%, 100%);
+        font-weight: 500;
+        text-shadow: 2px 1px hsl(21, 30%, 15%);
+    
+      }
+    
+      h1, h2, nav > p {
+        font-family: 'DM Sans';
+      }
+      
+      p {
+        display: inline-block;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        font-size: 18px;
+      }
+    
+      img {
+        object-fit: cover;
+        opacity: 90%;
+        border-bottom: 4px solid hsl(21, 30%, 35%);
+      }
+    
+    /* CLASSES */
+    
+      .top-text {
+        color: peachpuff;
+        font-size: 80px;
+        font-weight: 600;
+        text-shadow: 3px 3px black;
+      }
+    
+        .container {
+          position: relative;
+          text-align: center;
+        }
+    
+        .centered {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 80%;
+          transform: translate(-50%, -50%);
+        }
+    
+        .about {
+          margin-left: 600px;
+          width: 150px;
+          height: 50px;
+          padding: 5px;
+          background-color: hsl(21, 30%, 15%);
+          color: #ffffff;
+          display: block;
+          border-radius: 5px;
+        }
+        
+        .about:hover {
+            background-color: hsl(21, 30%, 35%);
+            color: #ffffff;
+            cursor: pointer;
+          }
+        
+          .about-text {
+            margin: auto;
+            margin-top: 15px;
+            font-weight: 200;
+          }
+        
+          .about-text:hover {
+            font-weight: 600;
+            cursor: pointer;
+          }
+        
+          .one {
+            width: 1000px;
+            text-align: center;
+            padding: 50px;
+            margin: 50px;
+            margin-top: 20px;
+          }
+    
+          .one-text {
+            color: rgb(0, 0, 0);
+            font-size: 30px;
+          }
+    
+          .two {
+            padding: 50px;
+            padding-top: 30px;
+            margin: 50px;
+            margin-top: 10px;
+          }
+    
+          .two-text {
+            color: rgb(0, 0, 0);
+            font-size: 25px;
+            text-align: left;
+          }
+          
+          .three {
+            padding: auto;
+            padding-top: 30px;
+          }
+    
+          .three-text {
+            color: rgb(0, 0, 0);
+            font-size: 25px;
+            text-align: center;
+          }
+    
+          .list {
+            font-size: 20px;
+            margin-left: 300px;
+            display: inline-block;
+          }
+          
+          .divider {
+            border-bottom: 4px solid hsl(21, 30%, 35%);
+          }
+    
+          .spacer {
+            margin: 50px 0;
+          }
+    
+      /* FOOTER */
+      
+      footer {
+        width: 100%;
+        height: 150px;
+        background-color: #1b1b32;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    
+      .footer {
+        font-size: 20px;
+        margin: 150px;
+        text-align: center;
+        color: white;
+      }
+    
+      .socials {
+        width: 500px;
+        height: 50px;
+        margin-top: 30px;
+        margin-left: 0px;
+      }
+    
+      nav > ul {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        align-items: center;
+        padding-inline-start: 0;
+        margin-block: 0;
+        height: 100%;
+      }
+    
+      nav > ul > li {
+        width: 120px;
+        height: 50px;
+        background-color: hsl(21, 30%, 15%);
+        margin-top: -40px;
+        display: block;
+        border-radius: 5px;
+        text-align: center;
+      }
+    
+      nav > ul > li:hover {
+        background-color: hsl(21, 30%, 35%);
+        color: #ffffff;
+        cursor: pointer;
+      }
+      nav > ul > li > a > p {
+        margin-top: 13px;
+        font-size: 20px;
+        color: #dfdfe2;
+      }
+    
+      nav > ul > li > a > p:hover {
+        font-weight: 600;
+        cursor: pointer;
+      }
+    
+
+      table,
+    td {
+        border: 1px solid #333;
+        color: black;
+        background-color: peachpuff;
+    }
+
+    td {
+      text-align: center;
+    }
+    
+    th {
+        background-color: #333;
+        color: #fff;
+    }
+    
+    .container-two {
+        text-decoration: none;
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        width: 60%;
+        margin: auto;
+        max-height: 500px;
+        align-items: center;
+    }
+    
+    .btn {
+        margin-top: 30px;
+        min-width: 130px;
+        height: 40px;
+        padding: 5px 10px;
+        font-weight: bold;
+        border: 1px solid #000;
+        background: peachpuff;
+        
+    }
+
+    .theader {
+        width: 60%;
+        padding: 5px 20px;
+    }
+
+    .border {
+      border: 1px solid black;
+    }
+
+    .block {
+      display: block;
+    }
+
+    .addon {
+      margin:auto;
+      text-align: center;
+      font-weight: 700;
+    }
+
+    .meh {
+      display: flex;
+      margin-left: 500px
+    }
+
+    .space {
+      margin-right: 20px;
+    }
+
+    .inline {
+      display: flex;
+    }
+
+    .smol {
+      width: 25%;
+      height: 25%;
+    }
+      </style>
+
+</head>
+    <link href="styles.css" rel="stylesheet"/>
+  </head>
+<body>
+  <header>
+    <h1>Restaurant Activity</h1>
+    <div class=" meh">
+      <a href="#about">
+        <nav class="nav space"> 
+        <p> About us</p>
+      </nav></a>
+      <a href="#fr">
+        <nav class="nav space"> 
+        <p>Food reviews</p>
+      </nav></a>
+      <a href="#foot">
+        <nav class="nav"> 
+        <p>Contacts</p>
+    </div>
+  </header>
+  <main>
+     <div class="container">
+        <img src="https://toohotel.com/wp-content/uploads/2022/09/TOO_restaurant_Panoramique_vue_Paris_Seine_Tour_Eiffel_2.jpg" 
+              style="width: 100%; height: 850px" />
+        <div class="centered">
+          <p class="top-text">Hi! Welcome to our Restaurant, we serve a variety of foods.</p>
+            <nav class="about">
+              <p class="about-text"><a href="#menu">Menu!</a></p>
+            </nav>
+        </div>
+      </div>
+    </main>
+      <section>
+
+        
+        <div class="container-two" >
+          <h2 id="menu">MENU!</h2>
+          <table>
+            <tr class="header">
+              <th class="theader">Dish</th>
+              <th class="theader">Price</th>
+              <th class="theader">Cart</th>
+            </tr>
+            <tr>
+              <td>Adobo</td>
+              <td>$9.99</td>
+              <td><button>add</button></td>
+            </tr>
+            <tr>
+              <td>Sinigang</td>
+              <td>$9.99</td>
+              <td><button>add</button></td>
+            </tr>
+            <tr>
+              <td>Paksiw</td>
+              <td>$9.99</td>
+              <td><button>add</button></td>
+            </tr>
+            <tr>
+              <td>Caldereta</td>
+              <td>$9.99</td>
+              <td><button>add</button></td>
+            </tr>
+            <tr>
+              <td>Ulam na masarap</td>
+              <td>$9.99</td>
+              <td><button>add</button></td>
+            </tr>
+            <tr>
+              <td>Ulam na mas masarap</td>
+              <td>$9.99</td>
+              <td><button>add</button></td>
+            </tr>
+            <tr>
+              <td>Ulam na di masarap</td>
+              <td>$9.99</td>
+              <td><button>add</button></td>
+            </tr>
+            <tr>
+              <td>Ulam na basta masarap</td>
+              <td>$9.99</td>
+              <td><button>add</button></td>
+            </tr>
+            
+          </table>
+      
+          <button class="btn">Checkout</button>
+      </div>
+      </section>
+
+    <section class="border">
+        <div class="one">
+          <h2 class="one-text" id="about">About Us!</h2>
+        </div>
+        <div class="two">
+          <p class="two-text">We're a huge group of people consisting of 1 person who dedicates their lives in serving the best food out there. Here is a list of our staff below.
+          </p>
+          <ul class="list">
+            <li>Executive Chef</li>
+            <li>Waiter</li>
+            <li>ex Jollibee crew</li>
+          </ul>
+        </div>
+    </section>
+    <section class="block">
+      <p class="three-text three addon" id="fr">Food reviews</p>
+
+      <div class="inline">
+        <img class="smol" src="https://www.seriouseats.com/thmb/uc8nb040OwgXekR9obuhEqm8WoI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__2019__10__20191023-chicken-adobo-vicky-wasik-19-12ce105a2e1a44dfb1e2673775118064.jpg"
+        />
+        <p class="three-text three">“Their brunch is awesome, I love the avocado toast and the California focaccia. Pizza is really good as well.” – Alison B.
+      </p>
+      </div>
+
+      <div class="inline">
+      <img class="smol" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Sinigang_na_Baboy.jpg/1200px-Sinigang_na_Baboy.jpg" />
+      <p class="three-text three">“This is always our breakfast stop before heading home from vacation. Always delicious. Always great service. Always worth the stop.” – Kristine R.
+      </p>
+      </div>
+    </section>
+    <div class="divider"></div>
+    <footer id="foot">
+      <h2 class="footer">Contact Us! (click the buttons)</h2>
+      <nav class="socials">
+        <ul>
+          <li><a href="https:/facebook.com/itsonlysan" target="_blank"><p>Facebook</p></a></li>
+          <li><a href="https:/discordapp.com/users/470820470292480000" target="_blank"><p>Discord</p></a></li>
+        </ul>
+      </nav>
+    </footer>
+  </main>
+</body>
+</html>

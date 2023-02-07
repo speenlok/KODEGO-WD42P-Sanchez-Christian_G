@@ -1,0 +1,169 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>Registration Form for ABC daycare school</title>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="description" content="Registration Form for ABC daycare school">
+            <meta name="keyword" content="Registration Form for ABC daycare school">
+            <meta name="author" content="Christian Sanchez">
+    </head>
+    <style>
+    body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    background-image: url("https://www.wallsauce.com/uploads/wallsauce-com/images/hero/cat/1305/645/nursery.jpg");
+    color: #f5f6f7;
+    font-family: Tahoma;
+    font-size: 16px;
+  }
+  
+h1, p {
+    margin: 1em auto;
+    text-align: center;
+  }
+  
+  div {
+    background-color: antiquewhite;
+    width: 600px;
+    padding: 10px 15px;
+  }
+
+  form {
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+  }
+  
+  fieldset {
+    border: none;
+    padding: 2rem 0;
+    border-bottom: 3px solid #3b3b4f;
+  }
+  
+  fieldset:last-of-type {
+    border-bottom: none;
+  }
+  
+  label {
+    display: block;
+    margin: 0.5rem 0;
+    color: #0a0a23;
+  }
+  
+  input,
+  textarea,
+  select {
+    margin: 10px 5px;
+    width: 60%;
+    min-height: 2em;
+  }
+  
+  input, textarea {
+    background-color: white;
+    border: 1px solid #0a0a23;
+    color: black;
+  }
+  
+  .inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+  }
+  
+  input[type="submit"] {
+    display: block;
+    width: 60%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: antiquewhite;
+    border-color: white;
+    min-width: 300px;
+  }
+  
+  input[type="file"] {
+    padding: 1px 2px;
+  }
+
+  .bold {
+    font-weight: bold;
+  }
+
+  .black {
+    color: black;
+  }
+    </style>
+
+    <body>
+        <h1>ABC Daycare Registration Form</h1>
+        <p>Please fill out this form with the required information</p>
+        <form method="post" action='https://ABC-Daycare-School/Registration-Office.com'>
+        <div>
+          <fieldset>
+            <label class="bold"> 1. Child's details</label>
+            <label for="child-first-name">Child's First Name(s): <input id="child-first-name" name="child-first-name" type="text" required /></label>
+            <label for="child-last-name">Child's Surname: <input id="child-last-name" name="child-last-name" type="text" required /></label>
+            <label for="dob">Child's Date of Birth: <input id="dob" name="dob" type="date" required /></label>
+            <label>Child's Gender</label>
+            <label for="male"><input id="male" type="radio" name="gender" class="inline" /> Male</label>
+            <label for="female"><input id="female" type="radio" name="gender" class="inline" /> Female</label>
+            <label for="bio">Home Address:
+                <textarea id="bio" name="bio" rows="4" cols="40" placeholder="123 Mabuhay St..."></textarea>
+            </label>
+            <label for="postcode">Postal Code <input id="postcode" type="number" name="postcode" class="inline" /></label>
+            <label for="domta">Date of Moving to this address  <input id="domta" name="domta" type="date" required /></label>
+        </fieldset>
+
+        <fieldset>
+          <label class="bold"> 2. Parents/ Carers details (please tick)</label>
+          
+          <label for="Mr"><input id="Mr" type="radio" name="title" class="inline" /> Mr</label>
+          <label for="Mrs"><input id="Mrs" type="radio" name="title" class="inline" /> Mrs</label>
+          <label for="Mr"><input id="Mr" type="radio" name="title" class="inline" /> Mr</label>
+          <label for="Ms"><input id="Ms" type="radio" name="title" class="inline" /> Ms</label>
+          <label for="Other"><input id="Other" type="radio" name="title" class="inline" /> Other</label>
+
+          <label for="first-name">First Name(s): <input id="first-name" name="first-name" type="text" required /></label>
+           <label for="last-name">Surname: <input id="last-name" name="last-name" type="text" required /></label>
+          <label for="dob">Relationship to Child (please tick)</label>
+          
+          <label for="Mother"><input id="Mother" type="radio" name="Relationship" class="inline" /> Mother</label>
+          <label for="Father"><input id="Father" type="radio" name="Relationship" class="inline" /> Father</label>
+          <label for="Step=Parent"><input id="Step=Parent" type="radio" name="Relationship" class="inline" /> Step Parent</label>
+          <label for="Foster-Parent"><input id="Foster-Parent" type="radio" name="Relationship" class="inline" /> Foster Parent</label>
+          <label for="Other-Relationship"><input id="Other-Relationship" type="radio" name="Relationship" class="inline" /> Other</label>
+
+          <label for="tel-no">Tel No. : <input id="tel-no" name="tel-no" type="number" required /></label>
+          <label for="mob-no">Mobile No. : <input id="mob-no" name="mob-no" type="number" required /></label>
+          <label for="Email">Email Address : <input id="Email" name="Email" type="email" required /></label>
+      </fieldset>
+
+      <fieldset>
+        <label class="bold"> 3. Further Information</label>
+        <label> If you have any older children attending the school, please provide details below*</label>
+        <label for="first-sibling">Sibling's full name: <input id="first-sibling" name="first-sibling" type="text"/></label>
+        <label for="fs-dob">Sibling's Date of Birth: <input id="fs-dob" name="fs-dob" type="date" /></label>
+        <label for="second-sibling">Sibling's full name: <input id="second-sibling" name="second-sibling" type="text"/>></label>
+        <label for="ss-dob">Sibling's Date of Birth: <input id="ss-dob" name="ss-dob" type="date" /></label>
+
+        <label class="bold">NURSERY PROVISION IS 5 MORNING OR 5 AFTERNOON SESSION, AS SHOWN BELOW.</label>
+        <label>*Please tick which sessions you prefer</label>
+         <label for="morning-session"><input id="morning-session" type="radio" name="session" class="inline" required/> The morning session runs from: 6:45 am to 11:45 am</label>
+        <label for="afternoon-session"><input id="afternoon-session" type="radio" name="session" class="inline" required/> The afternoon session runs from: 12:15 pm to 3:15 pm</label>
+        <label for="either-session"><input id="either-session" type="radio" name="session" class="inline" required/> Either</label>
+
+        <label>*  Where possible parental preference will be taken into account but no guarantee can be given as the allocation of places depends on whether a vacancy exists in the morning or the afternoon. It would be helpful, therefore, if you could also tick the "Either session" if you do not have a strong preference</label>
+        </fieldset>
+
+        <fieldset>
+          <p class="bold black">Please Click the Finish button to submit the form</p>
+        </fieldset>
+        </div>
+          <input type="submit" value="Finish" />
+        </form>
+      </body>
+</html>>
