@@ -33,10 +33,13 @@ wd.post('/form-registration', (req, res)=>{
     
  let fname = req.body.firstname
  let lname = req.body.lastname
+ let age = req.body.age
+ let address = req.body.address
+ let email = req.body.email
     
  console.log(fname +  "    " +lname)
  
-    fs.writeFile('storage/' + fname + "-" +lname + '.txt', fname +  "    " +lname, function (err) {
+    fs.writeFile('storage/' + fname + "-" +lname + '.txt', fname +  "    " +lname  +  "    " + age  +  "    " +address  + "    " +email, function (err) {
     if (err) throw err;
      console.log('Saved!');
      res.end();
