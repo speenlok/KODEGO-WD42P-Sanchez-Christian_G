@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+
+    <style>
+      .border {
+          border: 2px solid skyblue;
+          max-width: 1000px;
+          margin: auto;
+          padding: 10px;
+          border-radius: 5px;
+      }
+      
+      .parent {
+          margin: auto;
+          width:400px;
+          padding: 10px;
+          color: white;
+          background-color: rgb(64, 143, 170);
+          padding: 5px;
+          border-radius: 5px;
+          border: 2px solid lightblue;
+      }
+      
+      .child {
+          text-align: center;
+          padding: 10px;
+      }
+      
+      a {
+        color:white;
+      }
+      
+      #center {
+        position: absolute; 
+        z-index: 15;
+        top: 40%;
+        left: 50%;
+        margin: -100px 0 0 -220px;
+      }
+
+      #paragraph1, #paragraph2 {
+        font-weight: 700;
+        padding-bottom: 0px;
+      }
+      
+      </style>
+
+</head>
+
+<body>
+      
+      <div class="border" id="center">
+        <div class="parent">
+            <div class="child" id="paragraph1"><h1> Registration Page </h1></div>
+            <div class="child" id="paragraph2"><%=  locals.errorMessage || ''   %></div>
+        </div>
+          <br />
+        <div class="parent">
+          <br />
+          <div class="child">
+            <form action="/form-registration" method="post">
+                <label for="fname">Firstname:</label><br>
+                <input type="text" id="fname" name="firstname" required><br>
+                <label for="lname">Lastname:</label><br>
+                <input type="text" id="lname" name="lastname" required><br><br>
+                <input type="submit" value="Submit" />
+            </form> 
+          </div>
+            <br />          
+        </div>
+    </div>
+    
+</body>
+</html>
