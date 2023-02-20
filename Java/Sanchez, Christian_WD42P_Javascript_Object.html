@@ -1,0 +1,118 @@
+<!Doctype html>
+<html><body>
+<script>
+// 1. Create an object of a Car with the following properties Name, YearModel, EngineType, Manufacturer, Brand, CountryOrigin.
+//The Car object should be able to receive data inputs in the constructor function to facilitate all the properties initial values.
+const cars = {
+car1: {
+  name : "GTX",
+  yearModel : "2020",
+  engineType : "V1",
+  manufacturer : 
+  brand : 
+  countryOrigin : "Germany",
+}, 
+car2: {
+  name : "GTR",
+  yearModel : "2020",
+  engineType : "V1",
+  manufacturer : "Nissan"
+  brand : 
+  countryOrigin : "",
+}, 
+ }
+
+function updateCar(update, id, prop, value) {
+
+
+  if (value === '') {
+    delete car[id][prop];
+  } else if (prop === "brand") {
+    records[id][prop] = records[id][prop] || []; 
+    records[id][prop].push(value);
+  } else {
+    records[id][prop] = value;
+  }
+  return records;
+}
+
+updateCar(cars, car1, 'brand', 'Nissan')
+
+// 2. Create an Arithmetic object with the properties of Input1, and Input2 as two numeric values, their initial values must be taken from constructor function. 
+//Using the properties value of Input1 and Input2, Arithmetic object should have a 4 functions that returns the results of Multiplication, Division, Subtraction and Addition.
+
+class object {
+  constructor(num1, num2){
+           this.add  = ans1
+           this.sub  = ans2
+           this.mul  = ans3  
+           this.div  = ans4
+        }
+  update(input1, input2){
+    input1(){
+      let ans1 = num1 + num2;
+      return ans1
+    }
+
+    input2(){
+      let ans1 = num1 - num2;
+      return ans1
+    }
+
+    input3(){
+      let ans1 = num1 * num2;
+      return ans1
+    }
+
+    input4(){
+      let ans1 = num1 / num2;
+      return ans1
+    }
+  }
+}
+
+
+// 3. Create an object of Student with the following properties FirstName, LastName, Address, Age and Email.
+// Each properties should have the following value: 
+// FirstName = "Mary",
+// LastName = "Smith",
+// Address = "BURKHARDT RD. EVANSVILLE.",
+// Age = "29" 
+// Email = "mary123@yahoo.com".
+// Using prototype add the following new properties Nationality, Language, may put random sensible data for the prototype properties
+
+class Person {
+        
+        constructor(fname, lname, age, eyeColor, email){
+           this.firstName = fname;
+           this.lastName  = lname;
+           this.address   = address;    
+           this.age       = age;
+           this.email     = email;
+        }
+
+        getFirstname(){
+            return this.firstName;
+        }
+
+        setFirstName(newFirstname){
+            this.firstName = newFirstname;
+        }
+
+        speed_in_typing(x, y){
+             return (x * y) + 100;
+        }
+        
+        speed_in_running(i, p){
+        let speed = ((i * 100) * 10)/p;
+        return speed; 
+        }
+
+        eye_color_value(){
+        return this.eyeColor;
+        }
+
+     }
+
+</script>
+</body></html>

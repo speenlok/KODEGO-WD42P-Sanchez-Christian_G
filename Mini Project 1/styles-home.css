@@ -1,0 +1,202 @@
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    text-shadow:
+        -1px 0px 0px black,
+        2px 0px 0px black,
+        0px -2px 0px black,
+        0px 1px 0px black;
+    color: white;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 20px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    -webkit-text-stroke: 0.5px black;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+  }
+
+  #slideshow{
+    background-color: white;
+    display: block;
+    padding: 20px 0;
+  }
+
+/*ARTICLES*/
+.articles-container{
+    width: 100%;
+    color: white;
+    font-size: min(max(16px, 4vw), 22px);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.articles-container h1{
+    text-indent: 3vw;
+}
+
+.articles-container a article{
+    margin: auto;
+    width: 90%;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.articles-container a{
+    text-decoration: none;
+    color: white;
+}
+
+.mid:hover {
+    background-color: #14C443;
+    text-decoration: underline;
+}
+
+.dark:hover {
+    background-color: #14C443;
+}
+
+#discounts{
+    background-color: white;
+    width: 100%;
+}
+.dicounted-items{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-inline-start: 0;
+    margin-block: 0;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 70px;
+}
+
+.item-container{
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    width: 20%;
+    height: 300px;
+    border: solid 1px #D9D9D9;
+    margin: 20px;
+    padding: 20px;
+}
+
+.item{
+    width: 80%;
+    height: 90%;
+    align-self: center;
+}
+
+.item-container a{
+    align-self: center;
+    display: block;
+    align-items: center;
+    padding: 10px;
+    margin: 20px;
+}
+
+.item-container a button{
+    align-self: center;
+    background-color:#14C443;
+    color: white;
+    font-size: 1vw;
+    padding: 5px 20px;
+}
+
+.item-container button:hover{
+    background-color:#0B6823;
+}
+
+#discounts h1{
+    text-indent: 3.5vw;
+
+}
+
+.item img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.active {
+    background-color: green;
+    color: white;
+}

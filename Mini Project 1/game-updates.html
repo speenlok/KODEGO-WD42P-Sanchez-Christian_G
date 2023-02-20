@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>GameStorePh</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Website for Selling Computer Parts and Games. Also for gaming related news.">
+        <meta name="keyword" content="Selling Computer Parts and Games">
+        <meta name="author" content="Christian Sanchez">
+        <link href="styles-format.css" rel="stylesheet">
+        <link href="styles-blog.css" rel="stylesheet">
+        <link href="styles-signin.css" rel="stylesheet">
+        <link href="styles-login.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+<body>
+    <header>
+        <div class="header" for="header-links" >
+            <div class="header-links" id="header-links" for="links">
+                <a id="links" href="#footer" for="Contact-Us">Contact Us</a>
+                <a id="links" href="#footer" for="About-Us">About Us</a>
+        
+                <a id="sign-in" name="Sign-In">
+                    <button class="sign-in" onclick="document.getElementById('id01').style.display='flex'">
+                        Sign In
+                    </button>
+                </a>
+                <div id="id01" class="modal">
+                    <form class="modal-content animate" action="/action_page.php" method="post">
+                      <div class="container-signin">
+                        <div class="text-fields">
+                            <label for="uname"><b>Username:</b></label>
+                        <input class="input" type="text" placeholder="Enter Username" name="uname" required>
+                        </div>
+                        <div class="text-fields"><label for="psw"><b>Password:</b></label>
+                        <input class="input" type="password" placeholder="Enter Password" name="psw" required>
+                        </div>
+                        <button type="submit" class="button">Login</button>
+                        <label>
+                          <input type="checkbox" checked="checked" name="remember"> Remember me
+                        </label>
+                      </div>
+                  
+                      <div class="container-signin" class="button" style="background-color:#f1f1f1">
+                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                        <span class="psw">Forgot <a href="#">password?</a></span>
+                      </div>
+                    </form>
+                  </div>
+        
+                <a id="sign-in" href="#" name="Create-Account">
+                    <button class="sign-in" onclick="document.getElementById('id02').style.display='flex'">
+                        Create Account
+                    </button>
+                </a>
+        
+                <div id="id02" class="modalTwo">
+                    <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+                    <form class="modalTwo-content" action="/action_page.php">
+                      <div class="container-login">
+                        <h1>Sign Up</h1>
+                        <p>Please fill in this form to create an account.</p>
+                        <hr>
+                        <div class="text-fields"><label><b>Username</b></label>
+                            <input type="text" placeholder="Enter Username" name="email" required>
+                            </div>
+                        <div class="text-fields"><label for="email"><b>Email</b></label>
+                        <input type="text" placeholder="Enter Email" name="email" required>
+                        </div>
+        
+                        <div class="text-fields"><label for="psw"><b>Password</b></label>
+                        <input class="input-login" type="password" placeholder="Enter Password" name="psw" required>
+                        </div>
+        
+                        <div class="text-fields"><label for="psw-repeat"><b>Repeat Password</b></label>
+                        <input class="input-login" type="password" placeholder="Repeat Password" name="psw-repeat" required>
+                        </div>
+        
+                        <label>
+                          <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                        </label>
+                  
+                        <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+                  
+                        <div class="clearfix">
+                          <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn-login">Cancel</button>
+                          <button type="submit" class="signupbtn">Sign Up</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+        
+              </div>
+              
+        </div>
+        
+        <div class="navbar" id="navbar">
+            <div class="dropdown">
+                <div class="brand"><img class="logo" src="logo.png" />
+                </div>
+              </div>
+            <div class="dropdown indent">
+                <div class="brand">
+                    <a href="home.html">
+                    <button class="brand">GameStorePh</button>
+                    </a>
+                </div>
+              </div>
+            <div class="dropdown">
+                <button class="dropbtn">Shop
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <div class="flex-grow-dropdown">
+                        <a id="shop" href="shop.html">PC Peripherals</a>
+                        <a id="shop" href="shop.html">Computer Parts</a>
+                        <a id="shop" href="shop.html">Devices</a>
+                        <a id="shop" href="shop.html">Hot Deals</a>
+                    </div>
+              </div>
+              </div> 
+            <div class="dropdown">
+                <button class="dropbtn">Game Updates
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <div class="flex-grow-dropdown">
+                        <a id="game-updates" href="game-updates.html">Sales and Discounts</a>
+                        <a id="game-updates" href="game-updates.html">Upcoming Updates</a>
+                        <a id="game-updates" href="game-updates.html">Beta Games</a>
+                        <a id="game-updates" href="game-updates.html">Game Leaks</a>
+                    </div>
+                </div>
+              </div>
+            <div class="dropdown">
+              <button class="dropbtn">Blog
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <div class="flex-grow-dropdown">
+                    <a id="blog" href="blog.html">Youtube News</a>
+                    <a id="blog" href="blog.html">Twitch Events</a>
+                    <a id="blog" href="blog.html">Dev Notes</a>
+                </div>
+              </div>
+            </div>
+            <div class="dropdown">
+                <div class="search-container">
+                    <form action="/action_page.php">
+                    <input type="text" placeholder="Search |" name="search">
+                    <button class="search-button" type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        </header>
+<main>
+    <section name="blog" id="blog" for="blog-content">
+        <div class="blog-content" name="blog-content">
+            <a href="blog-content.html">
+            <h1>New Game Update Released!</h1>
+            <article>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." Read more...
+            </article></a>
+        </div>
+    </section>
+    <section name="blog" id="blog" for="blog-content">
+        <div class="blog-content" name="blog-content">
+            <a href="blog-content.html">
+            <h1>Subnautica 50% off!</h1>
+            <article>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." Read more...
+            </article></a>
+        </div>
+    </section>
+    <section name="blog" id="blog" for="blog-content">
+        <div class="blog-content" name="blog-content">
+            <a href="blog-content.html">
+            <h1>Blog #3</h1>
+            <article>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." Read more...
+            </article></a>
+        </div>
+    </section>
+    <section name="blog" id="blog" for="blog-content">
+        <div class="blog-content" name="blog-content">
+            <a href="blog-content.html">
+            <h1>Blog #4</h1>
+            <article>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." Read more...
+            </article></a>
+        </div>
+    </section>
+    <section name="blog" id="blog" for="blog-content">
+        <div class="blog-content" name="blog-content">
+            <a href="blog-content.html">
+            <h1>Blog #5</h1>
+            <article>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." Read more...
+            </article></a>
+        </div>
+    </section>
+    <section name="blog" id="blog" for="blog-content">
+        <div class="blog-content" name="blog-content">
+            <a href="blog-content.html">
+            <h1>Blog #6</h1>
+            <article>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." Read more...
+            </article></a>
+        </div>
+    </section>
+    <section name="blog" id="blog" for="blog-content">
+        <div class="blog-content" name="blog-content">
+            <a href="blog-content.html">
+            <h1>Blog #7</h1>
+            <article>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." Read more...
+            </article></a>
+        </div>
+    </section>
+    <section name="blog" id="blog" for="blog-content">
+        <div class="blog-content" name="blog-content">
+            <a href="blog-content.html">
+            <h1>Blog #8</h1>
+            <article>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." Read more...
+            </article></a>
+        </div>
+    </section>
+</main>
+<footer>
+    <div class="footer" name="footer" id="footer">
+        <div class="footer-container" id="about-us" name="About-Us">
+            <h3>About Us</h3>
+            <p class="content">Our Mission is to create an interactive website for a start-up business in the Philippines.</p>
+        </div>
+        <div class="footer-container" id="contact-Us" name="Contact-Us">
+            <h3>Contact Info</h3>
+            <table>
+                <th >You can contact us here:
+                    <tr>
+                        <td>Phone: +639123456789</td>
+                    </tr>
+                    <tr>
+                        <td>Email: something@gmail.com</td>
+                    </tr>
+                </th>
+            </table>
+        </div>
+        <div class="footer-container" id="navigation" name="Navigation">
+            <h3>Navigation</h3>
+            <ul class="content">
+               <a href="home.html"><li>Home</li></a>
+                <a href="shop.html"><li>Shop</li></a>
+                <a href="game-updates.html"><li>Game Updates</li></a>
+               <a href="blog.html"><li>Blog</li></a>
+            </ul>
+        </div>
+        <div class="footer-container" id="news-letter" name="News-Letter">
+            <h3>Newsletter</h3>
+            <p class="content">Subscribe to our Newsletter to receive daily updates on discounts and news.</p>
+            <form action="">
+                <input type="text" placeholder="example@gmail.com" name="search">
+                <button class="enter" type="submit"><div>I'm in!</div></button>
+            </form>
+        </div>
+    </div>
+    <div class="footer-divider"></div>
+    <div id="copyright" name="copyright">
+        <p>Copyright 2023. All rights reserved | This website is made by Christian G. Sanchez.</p>
+    </div>
+</footer>
+</body>
+<script src="main.js">
+</script>
+<script src="signin.js"></script>
+</html>
