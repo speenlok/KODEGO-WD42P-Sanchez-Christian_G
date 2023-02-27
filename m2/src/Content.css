@@ -1,0 +1,23 @@
+main{
+    padding: 3rem 3rem 10rem 3rem;
+}
+
+.centered-text{
+    text-align: center;
+}
+
+article {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+p {
+    display: block;
+    width: 70%;
+    text-indent: 3rem;
+    text-align: justify;
+}
+img {
+    width: 70%;
+}
