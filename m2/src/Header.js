@@ -9,7 +9,7 @@ function Header() {
     <li><a href="#home">Contact</a></li>
     <li><a href="#home">About</a></li>
     </ul>
-    </div>
+</div>
   );
 }
 

@@ -1,0 +1,73 @@
+<!Doctype html>
+<html><body><script>
+
+
+class Car {
+    constructor(name, yearModel, engineType, manufacturer, brand, countryOrigin) {
+      this.name = name;
+      this.yearModel = yearModel;
+      this.engineType = engineType;
+      this.manufacturer = manufacturer;
+      this.brand = brand;
+      this.countryOrigin = countryOrigin;
+    }
+  }
+  const myCar = new Car('Corolla', 2022, 'Gasoline', 'Toyota', 'SE', 'Japan');
+  console.log(myCar);
+
+
+
+
+
+  class Arithmetic {
+    constructor(input1, input2) {
+      this.input1 = input1;
+      this.input2 = input2;
+    }
+    
+    multiplication() {
+      return this.input1 * this.input2;
+    }
+    
+    division() {
+      return this.input1 / this.input2;
+    }
+    
+    subtraction() {
+      return this.input1 - this.input2;
+    }
+    
+    addition() {
+      return this.input1 + this.input2;
+    }
+  }
+
+  const myArithmetic = new Arithmetic(5, 3);
+  console.log(myArithmetic.multiplication()); // Output: 15
+  console.log(myArithmetic.division()); // Output: 1.6666666666666667
+  console.log(myArithmetic.subtraction()); // Output: 2
+  console.log(myArithmetic.addition()); // Output: 8
+  
+
+
+
+
+
+  function Student(firstName, lastName, address, age, email) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.address = address;
+    this.age = age;
+    this.email = email;
+  }
+  
+  Student.prototype.nationality = 'American';
+  Student.prototype.language = 'English';
+  
+  // Example usage:
+  const myStudent = new Student('Mary', 'Smith', 'BURKHARDT RD. EVANSVILLE.', 29, 'mary123@yahoo.com');
+  console.log(myStudent);
+  console.log(myStudent.nationality); // Output: "American"
+  console.log(myStudent.language); // Output: "English"
+
+  </script></body></html>
