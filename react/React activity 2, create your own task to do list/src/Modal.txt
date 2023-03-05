@@ -1,0 +1,20 @@
+import "./Content.css"
+import Content from "./Content"
+
+const Modal = ({toggle1, setToggle1}) => {
+
+    return (
+        <div onClick={() => setToggle1(!toggle1)} className="modal-design">
+            <div className="modal-input">
+            <input className="modal-input1" placeholder="New Task"
+            value={Content.newTask}
+            onChange={ (e) => Content.setNewTask}
+            />
+            <button className="modal-input1">Add Task</button>
+            </div>
+        </div>
+    )
+}
+
+export default Modal
+
